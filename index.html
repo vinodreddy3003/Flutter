@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daily Reminder</h1>
+    <div class="container">
+        <label for="day">Day of the week:</label>
+        <select id="day">
+            <option value="0">Monday</option>
+            <option value="1">Tuesday</option>
+            <option value="2">Wednesday</option>
+            <option value="3">Thursday</option>
+            <option value="4">Friday</option>
+            <option value="5">Saturday</option>
+            <option value="6">Sunday</option>
+        </select>
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+        <label for="activity">Activity:</label>
+        <select id="activity">
+            <option value="Wake up">Wake up</option>
+            <option value="Go to gym">Go to gym</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meetings">Meetings</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Quick nap">Quick nap</option>
+            <option value="Go to library">Go to library</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Go to sleep">Go to sleep</option>
+        </select>
+        <button onsubmit="setReminder()">Set Reminder</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
